@@ -1,0 +1,253 @@
+@media(max-width: 1119px) {
+  .section-title {
+    font-size: 46px;
+  }
+
+  .list-row {
+    .fl-d-column {
+      &-main {
+        font-size: 32px;
+      }
+
+      &-sub {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .button-bye {
+    font-size: 18px;
+    width: 160px;
+    height: 60px;
+  }
+
+  .about-wrapper {
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-around;
+    .about-card {
+      margin: 20px;
+    }
+  }
+}
+
+@media(max-width: 991px) {
+
+  .main-text {
+    font-size: 44px;
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .list-row {
+    .fl-d-column {
+      &-main {
+        font-size: 26px;
+      }
+
+      &-sub {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .button-bye {
+    font-size: 12px;
+    width: 140px;
+    height: 60px;
+  }
+
+  .album {
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      flex-basis: auto;
+    }
+  }
+
+  .about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .about-card {
+      margin-bottom: 20px;
+    }
+  }
+
+  footer {
+    height: 100px;
+    .copyright {
+      font-size: 16px;
+    }
+  }
+
+}
+
+@media(max-width: 872px) {
+  .albums-wrapper,
+  .about-wrapper {
+    justify-content: space-around;
+  }
+  .list-row {
+    .fl-d-column {
+      &-main {
+        font-size: 22px;
+      }
+
+      &-sub {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  .main-text {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .section {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+  .section-title {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+  .listen-music {
+    margin-bottom: 30px;
+  }
+  .list-row {
+    .fl-d-column {
+      &-main {
+        font-size: 18px;
+      }
+
+      &-sub {
+        font-size: 14px;
+      }
+    }
+  }
+  .button-bye {
+    font-size: 14px;
+    width: 140px;
+    height: 40px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .contact {
+    .email {
+      font-size: 22px;
+    }
+    .social-link-wrapper {
+      .social-link-title {
+        font-size: 20px;
+      }
+    }
+  }
+  footer {
+    .copyright {
+      font-size: 18px;
+    }
+  }
+}
+
+@media(max-width: 699px) {
+  .main-text {
+    font-size: 36px;
+    line-height: 38px;
+  }
+  .list-row {
+    flex-direction: column;
+    .fl-d-column {
+      align-items: center;
+      width: auto !important;
+      margin: 0 !important;
+      margin-bottom: 10px !important;
+      &-main {
+        font-size: 30px;
+        text-align: center;
+      }
+      &-sub {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  }
+  .button-bye {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .hamburger {
+    display: block;
+    &-active {
+      &:after, &:before {
+        border: none;
+      }
+    }
+  }
+
+  .header-top {
+    .menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: -6%;
+      margin: 0;
+      background-color: #1d0e65;
+      width: 112%;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 10px;
+      &-active {
+        display: flex;
+      }
+      &-link {
+        margin-bottom: 24px;
+        position: relative;
+        width: 100%;
+        &:after {
+          content: '';
+          width: 100%;
+          border: 1px solid #fff;
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          background: #fff;
+        }
+      }
+    }
+  }
+
+
+}
+
+@media(max-width: 631px) {
+  .album {
+    margin-bottom: 30px !important;
+  }
+  .main-text {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .listen-music {
+    flex-direction: column;
+    .listen-music-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+  .contact {
+    .social-link-wrapper {
+      flex-direction: column;
+    }
+  }
+}
+

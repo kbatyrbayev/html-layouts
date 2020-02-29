@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Regular.eot");
+  src: url("../fonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/Roboto-Bold.eot");
+  src: url("../fonts/Roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coda Caption';
+  src: url("../fonts/CodaCaption/CodaCaption-ExtraBold.eot");
+  src: url("../fonts/CodaCaption/CodaCaption-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/CodaCaption/CodaCaption-ExtraBold.woff2") format("woff2"), url("../fonts/CodaCaption/CodaCaption-ExtraBold.woff") format("woff"), url("../fonts/CodaCaption/CodaCaption-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+/*# sourceMappingURL=fonts.css.map */
