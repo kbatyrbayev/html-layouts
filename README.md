@@ -1,7 +1,7 @@
 # Just html layouts without backend
 
 **List of sites:**
-* [Coffe Shop landing page](https://kbatyrbayev.github.io/html-layouts/coffee-shop/)
+* [Coffe Shop landing page](https://kbatyrbayev.github.io/html-layouts/coffee-shop/)   in work
   >**HTML, CS.**
   >**Adaptive**
   >**Designed in Figma**
