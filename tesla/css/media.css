@@ -1,0 +1,133 @@
+@media (max-width: 1300px) {
+  .header-top {
+    padding: 0 80px;
+  }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .section-title {
+    padding-bottom: 50px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-top {
+    padding: 0 30px;
+  }
+  .main-title {
+    font-size: 2rem;
+  }
+  .sub-main-title {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .header-top .menu{
+    display: none;
+  }
+  .section {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  
+  .swiper-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 984px) {
+  .features {
+    flex-direction: column;
+  }
+  .features .feature {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .features .feature-title {
+    font-size: 20px;
+  }
+  .features .feature-subtitle {
+    font-size: 24px;
+  }
+  .features .feature {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  .swiper {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .swiper {
+    width: 800px;
+  }
+}
+
+@media (max-width: 800px) {
+  .swiper {
+    width: 600px;
+  }
+  .contact-block {
+    flex-direction: column;
+  }
+  .contact-block .contact-form-title  {
+    font-size: 2rem;
+  }
+  .contact-block .contact-form-input .contact-input-title {
+    font-size: 1rem;
+  }
+  .contact-block .contact-form-input .contact-input,
+  .contact-block .contact-form .contact-button {
+    width: 100%;
+    clip-path: none;
+  }
+  .contact-block .contact-form-input .input {
+    width: 95%;
+  }
+  .contact-block .contacts {
+    padding: 50px 0;
+  }
+  .contact-block .contacts .contact-items {
+    flex-direction: column;
+  }
+  .contact-block .contacts .contact-items .contact-item {
+    margin-bottom: 20px;
+  }
+  .menu-items {
+    flex-direction: column;
+  }
+  footer {
+    padding: 0 15px;
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .swiper {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .swiper {
+    width: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .swiper {
+    width: 100px;
+  }
+}

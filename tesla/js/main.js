@@ -1,30 +1,36 @@
 $(document).ready(function () {
   $('#pagepiling').pagepiling({
-    anchors: ['home', 'about', 'gallery', 'contact'],
+    anchors: ['home', 'about', 'gallery', 'contacts'],
     menu: '#menu',
     scrollingSpeed: 100,
     navigation: {
       'textColor': '#fff',
       'bulletsColor': '#fff',
       'position': 'right',
-      'tooltips': ['Главное', 'Характеристика', 'Галерея', 'Контакты']
+      'tooltips': ['Home', 'Feature', 'Gallery', 'Contacts']
     }
   });
 });
-
-var mySwiper = new Swiper('.swiper-container', {
-  speed: 400,
-  spaceBetween: 100,
+console.log(new Swiper);
+const swiper = new Swiper('.swiper', {
   loop: true,
-  navigation: {
-    nextEl: '.slide-button-next',
-    prevEl: '.slide-button-prev'
-  },
+  speed: 400,
+  slidesPerView: 1,
+
   pagination: {
     el: '.project-paginatation',
     type: 'bullets',
     bulletClass: 'project-bullet',
     bulletActiveClass: 'project-bullet-active',
     clickable: true
+  },
+
+  navigation: {
+    nextEl: '.slide-button-next',
+    prevEl: '.slide-button-prev'
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
   }
 });
+
