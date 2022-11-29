@@ -2096,10 +2096,11 @@ body {
   border: none;
   padding: 12px 24px;
   background: #13AB53;
-  border-radius: 50px;
+  border-radius: 8px;
   line-height: 24px;
   letter-spacing: 0.01em;
   color: #fff;
+  text-align: center;
 }
 
 .actions {
@@ -2407,4 +2408,27 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (max-width: 991px) {
+  .menu {
+    display: none;
+  }
+  .actions__link {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .button {
+    padding: 6px 12px;
+  }
+}
+@media (max-width: 400px) {
+  .header__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header__container .logo {
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

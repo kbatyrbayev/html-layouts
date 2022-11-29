@@ -82,10 +82,11 @@ body {
   border: none;
   padding: 12px 24px;
   background: $green;
-  border-radius: 50px;
+  border-radius: 8px;
   line-height: 24px;
   letter-spacing: 0.01em;
   color: $white;
+  text-align: center;
 }
 
 .actions {
@@ -444,3 +445,6 @@ body {
   }
   
 }
+
+
+@import 'media';
