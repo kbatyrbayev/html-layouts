@@ -5,15 +5,14 @@ window.onload = function () {
 
   window.onscroll = function () { setStickyMenu() };
 
-  let navigationMenu = document.getElementById('navigation-menu');
-  let sticky = navigationMenu.offsetTop;
-  console.log(sticky, 'sticky');
+  let header = document.querySelector('.header');
+  let sticky = header.offsetTop;
 
   function setStickyMenu() {
     if (window.pageYOffset > sticky) {
-      navigationMenu.classList.add("sticky");
+      header.classList.add("header__sticky");
     } else {
-      navigationMenu.classList.remove("sticky");
+      header.classList.remove("header__sticky");
     }
   }
 
@@ -41,5 +40,5 @@ window.onload = function () {
   
 }
 function beforeAfter() {  
-  document.getElementById('myPics').style.width = document.getElementById('myRange').value + "%";
+  document.getElementById('darkPicture').style.width = document.getElementById('myRange').value + "%";
 }

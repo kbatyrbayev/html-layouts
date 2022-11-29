@@ -1,4 +1,4 @@
-.theme-wrapper {
+.slider-wrapper {
   border: 4px solid #13AB53;
   border-radius: 12px;
   overflow: hidden;
@@ -7,23 +7,24 @@
   overflow: hidden;
 }
 
-.slider-wrapper {
+.slider {
   height: 700px;
   width: 100%;
   overflow: hidden;
+
+  &__figure {
+    background-image: url('../images/slider/dark.jpg');
+    background-size: cover;
+    font-size: 0;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
 }
 
-.slider-wrapper figure {
-  background-image: url('../images/slider/dark.jpg');
-  background-size: cover;
-  font-size: 0;
-  height: 100%;
-  margin: 0;
-  position: relative;
-  width: 100%;
-}
 
-#myPics {
+#darkPicture {
   background-image: url('../images/slider/light.jpg');
   background-size: cover;
   bottom: 0;
@@ -102,7 +103,7 @@ input#myRange::-ms-tooltip {
   display: none;
 }
 
-#myPics::before {
+#darkPicture::before {
   background: url('../images/slider/comparision.png') no-repeat scroll 0 center transparent;
   background-size: contain;
   content: " ";
