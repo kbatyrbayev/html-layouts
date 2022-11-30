@@ -1,12 +1,20 @@
 @font-face {
-  font-family: "MasonChronicles";
-  src: url("../fonts/masonchronicles.eot");
-  src: url("../fonts/masonchronicles.eot?#iefix") format("embedded-opentype"), url("../fonts/masonchronicles.woff2") format("woff2"), url("../fonts/masonchronicles.woff") format("woff"), url("../fonts/masonchronicles.ttf") format("truetype"), url("../fonts/masonchronicles.svg#masonchronicles") format("svg");
+  font-family: "Knight";
+  src: url("../fonts/knight.woff2") format("woff2"), url("../fonts/knight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+html {
+  height: 100vh;
+  font-size: 16px;
+}
+
 body {
   background-image: url("../img/bg.png");
   background-repeat: no-repeat;
   background-position: top right 20%;
+  background-size: cover;
   background-color: #141218;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -66,11 +74,11 @@ main .point {
   margin-left: 9px;
 }
 main .main-title {
-  font-family: "MasonChronicles", serif;
+  font-family: "Knight", serif;
   margin: 10px 0;
   font-weight: 500;
-  font-size: 76px;
-  line-height: 89px;
+  font-size: 4.75rem;
+  line-height: 5.5rem;
   animation-delay: 0.7s;
 }
 main .main-description {
@@ -99,16 +107,16 @@ main .series .card {
   align-items: flex-end;
 }
 main .series .card-1 {
-  background-image: url("../img/card/card-img1.jpg");
+  background-image: url("../img/card/1.webp");
 }
 main .series .card-2 {
-  background-image: url("../img/card/card-img2.jpg");
+  background-image: url("../img/card/2.webp");
 }
 main .series .card-3 {
-  background-image: url("../img/card/card-img3.jpg");
+  background-image: url("../img/card/3.webp");
 }
 main .series .card-4 {
-  background-image: url("../img/card/card-img4.jpg");
+  background-image: url("../img/card/4.webp");
 }
 main .series .card:before {
   content: "";
@@ -117,7 +125,7 @@ main .series .card:before {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%);
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.1) 0%, #2D2D2D 100%);
   border-radius: 8px;
 }
 main .series .card-text {

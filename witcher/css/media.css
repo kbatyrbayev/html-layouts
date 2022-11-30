@@ -10,13 +10,20 @@
   .left-side {
     margin-bottom: 8px;
   }
+  html {
+    font-size: 12px;
+  }
 }
 @media (max-width: 560px) {
+  html {
+    font-size: 10px;
+  }
   main {
     margin-top: 169px;
   }
   .hamburger {
     display: block;
+    z-index: 1;
   }
   .hamburger-active {
     background-color: transparent;
@@ -38,12 +45,12 @@
     top: 0;
     right: 0;
     width: 250px;
-    height: 263px;
     background-color: #9D2929;
     flex-direction: column;
     justify-content: flex-start;
     padding: 0;
     margin: 0;
+    z-index: 1;
   }
   .header-active {
     display: flex;
@@ -72,5 +79,10 @@
   }
   .header .menu-list .menu-link:last-child {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 8px;
   }
 }/*# sourceMappingURL=media.css.map */
