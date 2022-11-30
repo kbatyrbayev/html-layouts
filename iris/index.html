@@ -15,10 +15,10 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <a class="logo" href="#about">
+      <a class="logo">
         <img src="./images/logo.svg" alt="logo" class="logo__img">
       </a>
-      <nav class="menu">
+      <nav class="menu" id="menu">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="#about">О продукте</a>
@@ -38,11 +38,14 @@
         <a href="#" class="link actions__link">Войти</a>
         <a href="#" class="button">Попробовать бесплатно</a>
       </div>
+      <button class="burger">
+        <span class="burger__line"></span>
+      </button>
     </div>
   </header>
   <!-- /.header-->
 
-  <!-- <section class="section about" id="about">
+  <section class="section about" id="about">
     <div class="container">
       <div class="about__container">
         <div class="about__left">
@@ -59,16 +62,18 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- /.section about-->
 
-  <!-- <section class="section feature" id="feature">
+  <section class="section feature" id="feature">
     <div class="container">
       <div class="row flex-column">
-        <h2 class="section__title">Мы расширяем ваши возможности</h2>
-        <p class="section__subtitle feature__section__subtitle">
-          Помогаем вам действовать на опережение благодаря доступу к актуальным новостям и уникальному контенту
-        </p>
+        <div class="col-12">
+          <h2 class="section__title">Мы расширяем ваши возможности</h2>
+          <p class="section__subtitle feature__section__subtitle">
+            Помогаем вам действовать на опережение благодаря доступу к актуальным новостям и уникальному контенту
+          </p>
+        </div>
       </div>
       <div class="row">
         <div class="col-12">
@@ -92,10 +97,10 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- /.section feature-->
 
-<!--   <div class="section event" id="event">
+  <section class="section event" id="event">
     <div class="container">
       <h2 class="section__title">Будьте в курсе всех событий</h2>
       <p class="section__subtitle">Вы получаете доступ к информации, основанной на результатах комплексного анализа
@@ -103,10 +108,10 @@
       <ul class="event__items">
         <li class="event__item">
           <div class="row">
-            <div class="col-7">
+            <div class="col-md-7 col-12 order-2 order-md-1">
               <img src="./images/event/1.jpg" alt="index-picture">
             </div>
-            <div class="col-5">
+            <div class="col-md-5 col-12 order-1 order-md-2">
               <strong class="event__item__title">Индексы и индикаторы</strong>
               <p class="event__item__description">
                 Благодаря централизованному доступу
@@ -119,10 +124,10 @@
         </li>
         <li class="event__item">
           <div class="row">
-            <div class="col-7">
+            <div class="col-md-7 col-12 order-2 order-md-1">
               <img src="./images/event/2.jpg" alt="news-picture">
             </div>
-            <div class="col-5">
+            <div class="col-md-5 col-12 order-1 order-md-2">
               <strong class="event__item__title">Все актуальные новости</strong>
               <p class="event__item__description">
                 Благодаря централизованному доступу
@@ -135,10 +140,10 @@
         </li>
         <li class="event__item">
           <div class="row">
-            <div class="col-7">
+            <div class="col-md-7 col-12 order-2 order-md-1">
               <img src="./images/event/3.jpg" alt="news-picture">
             </div>
-            <div class="col-5">
+            <div class="col-md-5 col-12 order-1 order-md-2">
               <strong class="event__item__title">Сделки, заявки и итоги торгов</strong>
               <p class="event__item__description">
                 Благодаря централизованному доступу
@@ -151,10 +156,10 @@
         </li>
       </ul>
     </div>
-  </div> -->
+  </section>
   <!-- /.section event -->
 
-  <!-- <section class="section theme">
+  <section class="section theme">
     <div class="container">
       <h2 class="section__title">Темная или светлая сторона?</h2>
       <p class="section__subtitle">Никаких ограничений! Выбирайте свою любимую тему.</p>
@@ -168,14 +173,14 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- /.section theme -->
 
-  <!-- <section class="section contact" id="contacts">
+  <section class="section contact" id="contacts">
     <div class="container">
       <div class="contact__container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-lg-6 col-12">
             <h2 class="contact__title">Остались вопросы?</h2>
             <p class="contact__subtitle">
               Свяжитесь с нами по следующим контактам:
@@ -192,7 +197,7 @@
             <p class="contact__text">Уже являетесь пользователем Web IRIS?</p>
             <a class="contact__link" href="#">Зайдите в веб-версию</a>
           </div>
-          <div class="col-6">
+          <div class="col-lg-6 col-12">
             <div class="form">
               <div class="form__title">Пробный период</div>
               <div class="form__subtitle">Оставьте заявку и воспользуйтесь бесплатным тестовым доступом</div>
@@ -210,24 +215,24 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- /.section contact -->
 
   <footer class="footer">
     <div class="container footer__container">
       <div class="row">
         <div class="col-12 col-md-6">
-          <a class="footer__logo" href="#about">web iris</a>
+          <a class="footer__logo">web iris</a>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link" href="#about">О продукте</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#opportunities">Возможности</a>
+                <a class="menu__link" href="#feature">Возможности</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#tariff">Тарифы</a>
+                <a class="menu__link" href="#event">Тарифы</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#contacts">Контакты</a>

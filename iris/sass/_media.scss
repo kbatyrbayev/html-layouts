@@ -1,28 +1,191 @@
 @media (max-width: 991px) {
+  html {
+    font-size: 14px;
+  }
+  .header {
+    padding: 15px 0;
+  }
   .menu {
     display: none;
   }
+
+  .burger {
+    display: block;
+  }
+
   .actions {
-    &__link {
-      display: none;
+    display: none;
+  }
+
+  .section {
+    margin-bottom: 100px;
+  }
+
+  .about {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__left,
+    &__right {
+      width: 100%;
+      padding: 60px;
+    }
+
+    &__description {
+      margin-bottom: 24px;
+    }
+  }
+
+  .feature {
+    &__section__subtitle {
+      margin-bottom: 40px;
+    }
+
+    &__items {
+      justify-content: center;
+    }
+
+    &__item {
+      margin-top: 20px;
+    }
+  }
+
+  .event {
+    .row {
+      .col-5 {
+        padding: 0 15px;
+      }
+    }
+  }
+
+  .contact {
+    .form {
+      margin-top: 20px;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+  .about {
+
+    &__left,
+    &__right {
+      padding: 30px;
+    }
+
+    &__title {
+      margin-bottom: 12px;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+  }
+
+  .event {
+    &__item {
+      &:not(:last-child) {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $primary;
+        margin-bottom: 20px;
+      }
+
+      &__title,
+      &__description {
+        margin-bottom: 12px;
+      }
+      &__description {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  .slider {
+    height: 400px;
+  }
+
+  .contact {
+    &__container {
+      padding: 30px;
+    }
+    &__item {
+      &__title {
+        font-size: 1.2rem;
+      }
+    }
+    .form {
+      &__text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+  
+}
+
+@media (max-width: 575px) {
+  html {
+    font-size: 12px;
+  }
+  .button {
+    padding: 12px;
+    font-size: 1.5rem;
+  }
+
+  .about {
+    &__description {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+  .section {
+    margin-bottom: 60px;
+
+    &__subtitle {
+      margin-bottom: 30px;
+    }
+  }
+
+  .slider {
+    height: 250px;
+  }
+
+  .contact {
+    &__container {
+      padding: 10px;
+    }
+
+    .form {
+      padding: 10px 20px;
+    }
+  }
+  .menu {
+    &__mobile {
+      height: 100vh;
     }
   }
 }
 
-
-@media (max-width: 575px) {
-  .button {
-    padding: 6px 12px;
-  }
-}
-
 @media (max-width: 400px) {
-  .header {
-    &__container {
-      flex-direction: column;
-      align-items: flex-start;
-      .logo {
-        margin-bottom: 10px;
+  .about {
+    &__title {
+      // font-size: 34px;
+      // line-height: 40px;
+    }
+
+    &__subtitle {
+      // font-size: 1rem;
+
+      &::after {
+        width: 24px;
+        height: 24px;
       }
     }
   }

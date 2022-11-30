@@ -1,6 +1,10 @@
 @import 'grid';
 @import 'slider';
 
+/* root {
+  font-size: 16px;
+} */
+
 *,
 *::after,
 *::before {
@@ -13,9 +17,11 @@ $green: #13AB53;
 $whiteBg: #F3F6FB;
 $whiteBoxShadow: #BEBEBF;
 $whiteLinearGradient: linear-gradient(131.06deg, rgba(75, 79, 97, 0.15) 0%, rgba(40, 180, 99, 0.24) 50.52%, rgba(19, 171, 83, 0.17) 100%);
+html {
+  font-size: 16px;
+}
 
 body {
-  font-size: 16px;
   font-family: 'OpenSans', sans-serif;
   font-weight: 600;
   color: $primary;
@@ -29,6 +35,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
   }
 
   &__sticky {
@@ -64,11 +71,42 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
+
+  &__mobile {
+    display: block !important;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $whiteBg;
+    top: 110%;
+    border-top: 1px solid #53586D;
+    border-bottom: 1px solid #53586D;
+    padding: 50px 20px;
+    z-index: 1;
+
+    .menu__list {
+      flex-direction: column;
+    }
+
+    .menu__item {
+      margin-right: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .menu__link {
+      display: block;
+      padding: 10px;
+      border-bottom: 1px solid #c5c5c5;
+    }
+  }
 }
 
 .link {
-  font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5rem;
   letter-spacing: 0.02em;
   color: $primary;
   text-decoration: none;
@@ -104,8 +142,8 @@ body {
 
   &__title {
     font-weight: bold;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 2.5rem;
+    line-height: 3rem;
     margin-bottom: 24px;
     text-align: center;
   }
@@ -113,8 +151,8 @@ body {
   &__subtitle {
     margin: 0 auto;
     font-weight: 300;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     text-align: center;
     margin-bottom: 60px;
     max-width: 710px;
@@ -156,15 +194,15 @@ body {
 
   &__title {
     font-weight: 800;
-    font-size: 56px;
-    line-height: 62px;
+    font-size: 3.5rem;
+    line-height: 3.8rem;
     margin-bottom: 24px;
   }
 
   &__subtitle {
     font-weight: 300;
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
     display: inline-flex;
     align-items: center;
     margin-bottom: 40px;
@@ -182,11 +220,9 @@ body {
   }
 
   &__description {
-    min-width: 490px;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: $primary;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     opacity: 0.9;
   }
 
@@ -196,6 +232,7 @@ body {
   &__items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__item {
@@ -209,18 +246,16 @@ body {
 
     &__title {
       font-weight: 700;
-      font-size: 32px;
-      line-height: 40px;
-      color: $primary;
-      margin-bottom: 20px;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin-bottom: 1.25rem;
     }
 
     &__description {
       font-weight: 300;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 1.5rem;
+      line-height: 2rem;
       text-align: center;
-      color: $primary;
       max-width: 260px;
     }
   }
@@ -238,18 +273,16 @@ body {
 
     &__title {
       font-weight: 700;
-      font-size: 32px;
-      line-height: 40px;
-      color: $primary;
+      font-size: 2rem;
+      line-height: 2.5rem;
       display: inline-block;
       margin-bottom: 24px;
     }
 
     &__description {
       font-weight: 300;
-      font-size: 18px;
-      line-height: 26px;
-      color: $primary;
+      font-size: 1.125rem;
+      line-height: 1.625rem;
     }
 
     .row {
@@ -276,14 +309,14 @@ body {
 
   &__title {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 140%;
     margin-bottom: 36px;
   }
 
   &__subtitle {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 150%;
     margin-bottom: 16px;
   }
@@ -298,14 +331,14 @@ body {
 
     &__title {
       font-weight: 400;
-      font-size: 12px;
+      font-size: 0.75rem;
       line-height: 120%;
       text-transform: uppercase;
     }
 
     &__value {
       font-weight: 400;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 140%;
       text-decoration: none;
       color: $primary;
@@ -314,16 +347,15 @@ body {
 
   &__text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5rem;
   }
 
   &__link {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    font-weight: 600;    
+    line-height: 1.5rem;
     color: #13AB53;
   }
+
   .form {
     width: 100%;
     padding: 40px;
@@ -334,7 +366,7 @@ body {
     flex-direction: column;
     align-items: center;
     background: $white;
-  
+
     &::before {
       content: '';
       position: absolute;
@@ -346,27 +378,28 @@ body {
       opacity: 0.2;
       box-shadow: 0px 20px 100px #13AB53;
       filter: blur(50px);
-      width: 440px;
-      height: 440px;
+      max-width: 440px;
+      width: 100%;
+      max-height: 440px;
+      height: 100%;
       z-index: -1;
     }
-  
+
     &__title {
       font-weight: 700;
-      font-size: 24px;
+      font-size: 1.5rem;
       line-height: 140%;
       letter-spacing: 0.01em;
       margin-bottom: 4px;
     }
-  
+
     &__subtitle {
       font-weight: 400;
-      font-size: 16px;
       line-height: 140%;
       margin-bottom: 40px;
       text-align: center;
     }
-  
+
     &__input {
       max-width: 360px;
       width: 100%;
@@ -376,29 +409,32 @@ body {
       padding: 0 12px;
       background: #fff;
       font-weight: 400;
-      font-size: 16px;
       line-height: 24px;
+
       &:not(:last-child) {
         margin-bottom: 30px;
       }
     }
+
     &__break {
-      width: 360px;
+      width: 100%;
       height: 1px;
       border-radius: 1px;
       background: #53586D;
       margin-bottom: 24px;
     }
+
     &__text {
       font-weight: 400;
-      font-size: 14px;
-      line-height: 22px;
+      font-size: 0.875rem;
+      line-height: 1.375rem;
       margin-bottom: 24px;
+
       a {
         color: $primary;
       }
     }
-  
+
   }
 }
 
@@ -407,44 +443,81 @@ body {
   &__container {
     padding-bottom: 20px;
   }
+
   &__logo {
     font-weight: 800;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     text-transform: uppercase;
     text-decoration: none;
-    color: $primary;
     display: inline-block;
     margin-bottom: 10px;
+    color: $primary;
   }
+
   &__phone {
     font-weight: 800;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
     color: $primary;
     display: block;
     text-decoration: none;
   }
+
   &__reviews {
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5rem;
     text-decoration: none;
     color: $primary;
   }
+
   &__break {
     opacity: 0.2;
     border: 1px solid $primary;
     margin-top: 60px;
     margin-bottom: 15px;
   }
+
   &__copyright {
     font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
-  
+
 }
 
+.burger {
+  display: none;
+  border: none;
+  height: 34px;
+  background: #13AB53;
+  border-radius: 3px;
+
+  &__line {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: $white;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      height: 2px;
+      width: 30px;
+      background: $white;
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      top: 8px;
+    }
+  }
+}
 
 @import 'media';

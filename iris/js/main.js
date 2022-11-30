@@ -1,6 +1,5 @@
 window.onload = function () {
 
-
   /* sticky logic start */
 
   window.onscroll = function () { setStickyMenu() };
@@ -24,21 +23,32 @@ window.onload = function () {
 
 
   /* scroll when select menu start*/
-  let menu = document.querySelectorAll('.menu__link');
+  let menuList = document.querySelectorAll('.menu__link');
 
-  for (let m of menu) {
+  for (let m of menuList) {
     m.addEventListener('click', function (event) {
       event.preventDefault();
       let id = this.getAttribute('href').substr(1);
       let elem = document.getElementById(id).offsetTop;
-      window.scrollTo({ top: elem-140, behavior: 'smooth'});
+      window.scrollTo({ top: elem - 140, behavior: 'smooth' });
+      if (menu.classList.contains('menu__mobile')) {
+        menu.classList.remove('menu__mobile')
+      }
     });
   }
   /* scroll when select menu end*/
 
 
-  
+  /* burger click start */
+  const menu = document.querySelector('#menu');
+  document.querySelector('.burger').addEventListener('click', function() {
+    menu.classList.toggle('menu__mobile')
+  })
+  /* burger click end */
+
 }
-function beforeAfter() {  
+
+
+function beforeAfter() {
   document.getElementById('darkPicture').style.width = document.getElementById('myRange').value + "%";
 }
