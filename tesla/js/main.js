@@ -1,18 +1,16 @@
 $(document).ready(function () {
-  if($(window).width() > 1200) {
-    $('#pagepiling').pagepiling({
-      anchors: ['home', 'about', 'gallery', 'contacts'],
-      menu: '#menu',
-      scrollingSpeed: 100,
-      navigation: {
-        'textColor': '#fff',
-        'bulletsColor': '#fff',
-        'position': 'right',
-        'tooltips': ['Home', 'Feature', 'Gallery', 'Contacts']
-      }
-    });
-  }
-
+  $('#pagepiling').pagepiling({
+    anchors: ['home', 'about', 'gallery', 'contacts'],
+    menu: '#menu',
+    scrollingSpeed: 100,
+    navigation: {
+      'textColor': '#fff',
+      'bulletsColor': '#fff',
+      'position': 'right',
+      'tooltips': ['Home', 'Feature', 'Gallery', 'Contacts']
+    }
+  });
+  
   const swiper = new Swiper('.swiper', {
     loop: true,
     speed: 400,
