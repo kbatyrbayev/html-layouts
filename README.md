@@ -8,15 +8,14 @@
 * [Site card for the TV series Supernatural](https://kbatyrbayev.github.io/html-layouts/supernatural/)
   >**HTML, CSS, SCSS, JS. Animate.css, SwiperJS, FancyboxJS. Adaptive**
 
+* [Site to new car by Tesla, Cybertruck](https://kbatyrbayev.github.io/html-layouts/tesla/)
+  >**HTML, CSS. Designed in Figma. Partially adapted**
+
 * [Promo site to concert of NinetyOne](https://kbatyrbayev.github.io/html-layouts/ninetyone/)
   >**HTML, CSS.**
   >**Adaptive.**
   >**Designed in Figma**
 
-* [Site to new car by Tesla, Cybertruck](https://kbatyrbayev.github.io/html-layouts/tesla/)
-  >**HTML, CSS.**
-  >**Not Adaptive.**
-  >**Designed in Figma**
 
 
 
