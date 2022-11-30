@@ -1,10 +1,13 @@
 # Just html layouts without backend
 
 **List of sites:**
-* [Coffe Shop landing page](https://kbatyrbayev.github.io/html-layouts/coffee-shop/)   in work
-  >**HTML, CS.**
+
+* [Site to product IRIS](https://kbatyrbayev.github.io/html-layouts/iris/)
+  >**HTML, CSS, JS**
   >**Adaptive**
-  >**Designed in Figma**
+  >**Bootstrap grid**
+  >**BEM methodology**
+
 
 * [Promo site to concert of NinetyOne](https://kbatyrbayev.github.io/html-layouts/ninetyone/)
   >**HTML, CSS.**
@@ -19,3 +22,5 @@
 * [Site to serial Witcher](https://kbatyrbayev.github.io/html-layouts/witcher/)
   >**HTML, CSS.**
   >**Adaptive.**
+
+
