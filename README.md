@@ -3,16 +3,10 @@
 **List of sites:**
 
 * [Landing page for product IRIS](https://kbatyrbayev.github.io/html-layouts/iris/)
-  >**HTML, CSS, SCSS, JS**
-  >**Adaptive**
-  >**Bootstrap grid**
-  >**BEM methodology**
+  >**HTML, CSS, SCSS, JS. Adaptive, Bootstrap grid. BEM methodology**
 
 * [Site card for the TV series Supernatural](https://kbatyrbayev.github.io/html-layouts/supernatural/)
-  >**HTML, CSS, SCSS, JS**
-  >**Animate.css, SwiperJS, FancyboxJS**
-  >**Adaptive**
-
+  >**HTML, CSS, SCSS, JS. Animate.css, SwiperJS, FancyboxJS. Adaptive**
 
 * [Promo site to concert of NinetyOne](https://kbatyrbayev.github.io/html-layouts/ninetyone/)
   >**HTML, CSS.**
