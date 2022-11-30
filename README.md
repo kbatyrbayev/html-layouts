@@ -12,10 +12,7 @@
   >**HTML, CSS. Designed in Figma. Partially adapted**
 
 * [Promo site to concert of NinetyOne](https://kbatyrbayev.github.io/html-layouts/ninetyone/)
-  >**HTML, CSS.**
-  >**Adaptive.**
-  >**Designed in Figma**
-
+  >**HTML, CSS. Adaptive. Designed in Figma**
 
 
 
